@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+  - mysql_user:
+      login_user: root
+      name: bob
+      password: '*EE0D72C1085C46C5278932678FBE2C6A782821B4'
+      encrypted: yes
+      priv: '*.*:ALL/mysql.*:SELECT'
+      state: present
